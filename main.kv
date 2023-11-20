@@ -1,0 +1,15 @@
+#:kivy 1.10.1
+<MainScreen>:
+    orientation: 'vertical'
+    
+    Button:
+        text: 'Cargar Imagen'
+        on_release: app.load_image()
+    
+    Image:
+        id: img_result
+        source: ''
+    
+    Label:
+        id: result_label
+        text: ''
